@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<h1>Post</h1>
+			<form action="/upload" method="post" enctype="multipart/form-data">
+				<label for="inputFile">Pic</label>
+				<input type="file" name="file" accept="image/*">
+				<input type="text" name="caption">
+				<input type="submit" value="send">
+				<img src="{{ url_for('static', filename='kanye2.jpg')}}">
+		</form>
+	</body>
+</html>
